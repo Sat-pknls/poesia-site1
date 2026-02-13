@@ -1,0 +1,59 @@
+body {
+  font-family: 'Georgia', serif;
+  background: #f9f6f2;
+  color: #333;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+h1 {
+  text-align: center;
+  color: #5a3e2b;
+  margin-bottom: 30px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 250px;
+}
+
+button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  font-size: 16px;
+  background-color: #5a3e2b;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #7b523d;
+}
+
+#resultados {
+  margin-top: 20px;
+}
+
+#resultados button {
+  margin: 5px;
+  background-color: #d9cbb5;
+  color: #333;
+}
+
+#resultados button:hover {
+  background-color: #c2a98a;
+}
+
+.poema {
+  margin-top: 30px;
+  padding: 15px;
+  border: 1px dashed #aaa;
+  min-height: 50px;
+  font-style: italic;
+  background-color: #fffdf8;
+}
