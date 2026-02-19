@@ -2,19 +2,63 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Máquina de Palavras Poéticas</title>
+  <title>Brainwordstorming</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Máquina de Palavras Poéticas</h1>
-  
-  <input type="text" id="busca" placeholder="Digite uma palavra...">
-  <button onclick="buscar()">Buscar</button>
-  
-  <div id="resultados"></div>
-  <div class="poema" id="poema"></div>
+  <!-- Sidebar do dicionário -->
+  <div id="dicionario">
+    <h2>Dicionário</h2>
+    <input type="text" id="buscaDicionario" placeholder="Buscar no dicionário...">
+    <button onclick="buscarDicionario()">Pesquisar</button>
+    <div id="resultadoDicionario"></div>
+  </div>
 
+  <!-- Conteúdo principal -->
+  <div id="conteudo">
+    <h1>Brainwordstorming</h1>
+    
+    <!-- Campo de busca -->
+    <input type="text" id="busca" placeholder="Digite uma palavra...">
+    <button onclick="buscar()">Buscar</button>
+    
+    <!-- Resultados da busca -->
+    <div id="resultados"></div>
+    
+    <!-- Caixa de texto -->
+    <div class="texto" id="texto" contenteditable="true"></div>
+    
+    <!-- Contador de palavras -->
+    <div id="contador">Palavras: 0</div>
+    
+    <!-- Botões -->
+    <button onclick="limparTexto()">Limpar</button>
+    <button onclick="salvarTexto()">Salvar</button>
+    <button onclick="copiarTexto()">Copiar</button>
+    <button onclick="alternarTema()">Alternar Tema</button>
+  </div>
+
+  <!-- Script -->
   <script src="script.js"></script>
 </body>
 </html>
 
+<!-- Histórico -->
+<div id="historico">
+  <h2>Histórico</h2>
+  <div id="listaHistorico"></div>
+</div>
+
+<!-- Estatísticas -->
+<div id="estatisticas">
+  <h2>Estatísticas</h2>
+  <div id="dadosEstatisticas"></div>
+</div>
+
+<!-- Aba de Rimas -->
+<div id="rimas">
+  <h2>Rimas</h2>
+  <input type="text" id="buscaRimas" placeholder="Digite uma palavra...">
+  <button onclick="buscarRimas()">Buscar Rimas</button>
+  <div id="resultadoRimas"></div>
+</div>
